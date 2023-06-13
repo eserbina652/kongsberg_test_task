@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import Breadcrumb from "./components/Breadcrumb/Breadcrumb";
+import Table from "./components/Table/Table";
 
 function App() {
+  const [selectedRow, setSelectedRow] = useState(null); // Update with your selected row state type
+
+  const handleBreadcrumbNavigation = (index: number) => {
+    // Handle breadcrumb navigation logic
+    // Example: Fetch data for the selected level or update the hierarchy path
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+        <Breadcrumb path={['Home', 'Folder', 'Subfolder']} onNavigate={handleBreadcrumbNavigation} />
+        <Table selectedRow={selectedRow} onRowSelect={setSelectedRow} />
+      </div>
   );
-}
+};
 
 export default App;
