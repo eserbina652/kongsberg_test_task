@@ -1,38 +1,40 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import TableRow from "./TableRow";
+import styles from './Table.module.scss'
+import {useGetAllCharactersQuery} from "../api/api";
+import {ICharacter} from "../api/interfaces";
+import {Nullable} from "../../types";
 
 interface TableProps {
-    selectedRow: any; // Replace with your specific row data type
-    onRowSelect: (row: any) => void;
+    selectedRow: Nullable<ICharacter>;
+    onRowSelect: (row: Nullable<any>) => void;
 }
 
-const Table: React.FC<TableProps> = ({ selectedRow, onRowSelect }) => {
-    const [data, setData] = useState([]);
+const Table: React.FC<TableProps> = ({selectedRow, onRowSelect}) => {
+    const {data: characters} = useGetAllCharactersQuery()
 
     useEffect(() => {
-        // Fetch data from API endpoint and update the data state
-        // Example: fetch('API_ENDPOINT_URL').then(response => response.json()).then(data => setData(data));
+
     }, []);
 
-    const handleRowClick = (row: any) => {
-        // Handle row selection logic
+    const handleRowClick = (row: ICharacter) => {
         onRowSelect(row);
     };
 
     return (
-        <table>
-            <thead>
+        <table className={styles.table}>
+            <thead className={styles.thead}>
             <tr>
+                <th>Name</th>
                 <th>ID</th>
-                <th>Author</th>
-                <th>Title</th>
-                <th>Kind</th>
-                {/* Add additional relevant columns */}
+                <th>Species</th>
+                <th>Location</th>
             </tr>
             </thead>
             <tbody>
-            {data.map((row: any) => (
-                <TableRow key={row.id} data={row} onClick={() => handleRowClick(row)} isSelected={row === selectedRow} />
+            {characters?.results.map((character: ICharacter) => (
+                <TableRow key={character.id} data={character}
+                          onClick={() => handleRowClick(character)} isSelected={character === selectedRow}/>
             ))}
             </tbody>
         </table>
