@@ -1,18 +1,19 @@
-import {useEffect, useRef} from "react";
+import { useEffect, useRef } from "react";
+import { Nullable } from "../types";
 
 export const useOutsideClick = (callback: () => void) => {
-    const ref = useRef()
-    useEffect(() => {
-        const handleClick = (event: object) => {
-            // @ts-ignore
-            if (ref.current && !ref.current.contains(event.target)) {
-                callback()
-            }
-        }
-        document.addEventListener('click', handleClick, true)
-        return () => {
-            document.removeEventListener('click', handleClick, true)
-        }
-    }, [ref])
-    return ref
-}
+  const ref = useRef<Nullable<HTMLTableRowElement>>(null);
+  useEffect(() => {
+    const handleClick = (event: object) => {
+      // @ts-ignore
+      if (ref.current && !ref.current.contains(event.target)) {
+        callback();
+      }
+    };
+    document.addEventListener("click", handleClick, true);
+    return () => {
+      document.removeEventListener("click", handleClick, true);
+    };
+  }, [ref]);
+  return ref;
+};

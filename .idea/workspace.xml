@@ -4,18 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bddca990-29af-46eb-b1ec-edd9b1dec637" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Table/Table.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/detectedClick.tsx" afterDir="false" />
+    <list default="true" id="bddca990-29af-46eb-b1ec-edd9b1dec637" name="Changes" comment="Got api response and added all data to the table/added styles and animations/plugged the font">
+      <change afterPath="$PROJECT_DIR$/.prettier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/navBar/NavBar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/routes/AppRouter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/routes/routers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/AllCharacters.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/SingleCharacter.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Kablammo-Regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/Kablammo/Kablammo-Regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Kablammo-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/Kablammo/Kablammo-Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Kablammo-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/Kablammo/Kablammo-Regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Breadcrumb/Breadcrumb.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Breadcrumb/Breadcrumb.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Table/Additional.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/Additional.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Table/Table.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/Table.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Table/Table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/Table.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Table/TableRow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/TableRow.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/api/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/api/interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/api/interfaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/api/interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/interfaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/detectedClick.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/detectedClick.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,9 +40,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="TypeScript File" />
-        <option value="CSS File" />
         <option value="TypeScript JSX File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -53,18 +68,54 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/yevheniia/Webstorm projects/shoppink_store",
+    "last_opened_file_path": "/home/yevheniia/Webstorm projects/shopPink_Store",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "/home/yevheniia/Webstorm projects/kongsberg_test_task/node_modules/react-scripts",
     "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/home/yevheniia/Webstorm projects/kongsberg_test_task/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
     "ts.external.directory.path": "/home/yevheniia/Webstorm projects/kongsberg_test_task/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/components/Table" />
+      <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$/src/assets/fonts/Kablammo" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/App.test.tsx" />
+      <test-names>
+        <test-name value="App" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.App" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="bddca990-29af-46eb-b1ec-edd9b1dec637" name="Changes" comment="" />
@@ -76,7 +127,17 @@
       <workItem from="1686659245440" duration="4761000" />
       <workItem from="1686666878124" duration="4504000" />
       <workItem from="1686746407722" duration="6449000" />
+      <workItem from="1686812348529" duration="13219000" />
+      <workItem from="1686920963206" duration="22442000" />
     </task>
+    <task id="LOCAL-00001" summary="Get api response and added all data to the table/added styles and animations/plugged the font">
+      <created>1686827598841</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686827598841</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,5 +145,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Get api response and added all data to the table/added styles and animations/plugged the font" />
+    <option name="LAST_COMMIT_MESSAGE" value="Get api response and added all data to the table/added styles and animations/plugged the font" />
   </component>
 </project>

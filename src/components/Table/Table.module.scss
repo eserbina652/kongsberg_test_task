@@ -99,8 +99,40 @@ th, td {
   }
 }
 
-.additional_header {
+.additional_header_wrap {
   background-color: lightgray !important;
   border: 2px solid pink;
 
+}
+
+.additional_header{
+  background-color: lightgray !important;
+  display: flex;
+  padding: 5px;
+  justify-content: space-evenly;
+}
+
+.button{
+  background-color: black;
+  border: white 2px solid;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 14px;
+  font-family: 'Kablammo', sans-serif;
+  cursor: pointer;
+  box-shadow: black 0 0 10px;
+}
+
+.button:hover{
+  background-color: white;
+  border: black 2px solid;
+  color: black;
+  box-shadow: white 0 0 10px;
+}
+
+.button_wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

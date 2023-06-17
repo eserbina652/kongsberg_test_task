@@ -1,23 +1,23 @@
-import React from 'react';
+import React from "react";
 
 interface BreadcrumbProps {
-    path: string[]; // Replace with the path data type
-    onNavigate: (index: number) => void;
+  path: string[]; // Replace with the path data type
+  onNavigate: (index: number) => void;
 }
 
 const Breadcrumb: React.FC<BreadcrumbProps> = ({ path, onNavigate }) => {
-    return (
-        <div>
-            {path.map((level, index) => (
-                <span key={index}>
-          {index > 0 && ' / '}
-                    <span style={{ cursor: 'pointer' }} onClick={() => onNavigate(index)}>
+  return (
+    <div data-testid="breadcrumb">
+      {path.map((level, index) => (
+        <span key={index}>
+          {index > 0 && " / "}
+          <span style={{ cursor: "pointer" }} onClick={() => onNavigate(index)}>
             {level}
           </span>
         </span>
-            ))}
-        </div>
-    );
+      ))}
+    </div>
+  );
 };
 
 export default Breadcrumb;
