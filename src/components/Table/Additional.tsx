@@ -1,39 +1,33 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "./Table.module.scss";
 import { ICharacter } from "../../api/interfaces";
-import { useNavigate, useParams } from "react-router-dom";
+import { useBreadcrumbContext } from "../../hooks/useBreadcrumbContext";
+
 interface AdditionalProps {
   data: ICharacter;
-  isAllCharacters?: boolean;
+}
+interface BreadcrumbContextType {
+  addBreadcrumb: (breadcrumb: string, options?: any) => void;
 }
 
-const Additional: React.FC<AdditionalProps> = ({
-  isAllCharacters = false,
-  data,
-}) => {
-  const statusClass = data.status.toLowerCase();
-  const navigate = useNavigate();
-  const [personId, setPersonId] = useState(data.id);
+const Additional: React.FC<AdditionalProps> = ({ data }) => {
+  const statusClass = data?.status?.toLowerCase();
+  const { addBreadcrumb } = useBreadcrumbContext() as BreadcrumbContextType;
   const handleClick = () => {
-    console.log("ADDITIONAL", data.id);
-    navigate(`/additionalInfo:${personId}`, { state: data });
+    addBreadcrumb(`/characters/${data.id}`, { state: data.id });
   };
-
-  useEffect(() => {
-    setPersonId(data.id);
-  }, [data]);
-
+  if (!data) {
+    return <div>SORRY PAGE IS NOT AVAILABLE</div>;
+  }
   return (
     <>
       <tr className={styles.additional_info}>
         <th className={styles.additional_header_wrap} colSpan={4}>
           <div className={styles.additional_header}>
-            Additional information about {data.name}
-            {isAllCharacters && (
-              <button className={styles.button} onClick={handleClick}>
-                Open in another page
-              </button>
-            )}
+            Additional information about {data?.name}
+            <div className={styles.button} onClick={() => handleClick()}>
+              Open in another page
+            </div>
           </div>
         </th>
       </tr>

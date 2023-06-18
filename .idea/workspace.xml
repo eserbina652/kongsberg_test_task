@@ -4,33 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bddca990-29af-46eb-b1ec-edd9b1dec637" name="Changes" comment="Got api response and added all data to the table/added styles and animations/plugged the font">
-      <change afterPath="$PROJECT_DIR$/.prettier.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navBar/NavBar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/routes/AppRouter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/routes/routers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/AllCharacters.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/SingleCharacter.tsx" afterDir="false" />
+    <list default="true" id="bddca990-29af-46eb-b1ec-edd9b1dec637" name="Changes" comment="design was resolved">
+      <change afterPath="$PROJECT_DIR$/src/components/Breadcrumb/Breadcrumb.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Table/CharacterAllInfo.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Welcome.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Welcome.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/navBar/NavBar.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useBreadcrumbContext.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/DefaultPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Kablammo-Regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/Kablammo/Kablammo-Regular.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Kablammo-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/Kablammo/Kablammo-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Kablammo-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/Kablammo/Kablammo-Regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Breadcrumb/Breadcrumb.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Breadcrumb/Breadcrumb.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Table/Additional.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/Additional.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Table/Table.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/Table.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Table/Table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/Table.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Table/TableRow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/TableRow.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/api/interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/interfaces.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/detectedClick.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/detectedClick.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navBar/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navBar/NavBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/routes/AppRouter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/routes/AppRouter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/routes/routers.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/detectedClick.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SingleCharacter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SingleCharacter.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +64,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/yevheniia/Webstorm projects/shopPink_Store",
+    "last_opened_file_path": "/home/yevheniia/Webstorm projects/shoppink_store",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
@@ -128,7 +124,9 @@
       <workItem from="1686666878124" duration="4504000" />
       <workItem from="1686746407722" duration="6449000" />
       <workItem from="1686812348529" duration="13219000" />
-      <workItem from="1686920963206" duration="22442000" />
+      <workItem from="1686920963206" duration="22782000" />
+      <workItem from="1687072435163" duration="5669000" />
+      <workItem from="1687078212718" duration="13673000" />
     </task>
     <task id="LOCAL-00001" summary="Get api response and added all data to the table/added styles and animations/plugged the font">
       <created>1686827598841</created>
@@ -137,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686827598841</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="design was resolved">
+      <created>1687016211175</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687016211175</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +151,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Get api response and added all data to the table/added styles and animations/plugged the font" />
-    <option name="LAST_COMMIT_MESSAGE" value="Get api response and added all data to the table/added styles and animations/plugged the font" />
+    <MESSAGE value="design was resolved" />
+    <option name="LAST_COMMIT_MESSAGE" value="design was resolved" />
   </component>
 </project>

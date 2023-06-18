@@ -1,13 +1,17 @@
 import React from "react";
-import Additional from "../components/Table/Additional";
 import { useLocation } from "react-router-dom";
+import { useGetSingleCharacterQuery } from "../api/api";
+import CharacterAllInfo from "../components/Table/CharacterAllInfo";
 
 const SingleCharacter = () => {
-  const data = useLocation();
+  const dataID = useLocation();
+  const { data: character } = useGetSingleCharacterQuery(dataID.state);
+  if (!character) {
+    return null;
+  }
   return (
-    <div>
-      {/*  @ts-ignore*/}
-      <Additional data={data} />
+    <div data-testid={"single_character"}>
+      <CharacterAllInfo character={character} />;
     </div>
   );
 };

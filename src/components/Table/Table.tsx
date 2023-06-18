@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import TableRow from "./TableRow";
 import styles from "./Table.module.scss";
 import { useGetAllCharactersQuery } from "../../api/api";
@@ -13,14 +13,12 @@ interface TableProps {
 const Table: React.FC<TableProps> = ({ selectedRow, onRowSelect }) => {
   const { data: characters } = useGetAllCharactersQuery();
 
-  useEffect(() => {}, []);
-
   const handleRowClick = (row: ICharacter) => {
     onRowSelect(row);
   };
 
   return (
-    <table className={styles.table} data-testid="table">
+    <table data-testid={"table-component"} className={styles.table}>
       <thead className={styles.thead}>
         <tr>
           <th>Name</th>
@@ -29,13 +27,12 @@ const Table: React.FC<TableProps> = ({ selectedRow, onRowSelect }) => {
           <th>Location</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody data-testid={"table-row"}>
         {characters?.results.map((character: ICharacter) => (
           <TableRow
             key={character.id}
             data={character}
             onClick={() => handleRowClick(character)}
-            isSelected={character === selectedRow}
           />
         ))}
       </tbody>

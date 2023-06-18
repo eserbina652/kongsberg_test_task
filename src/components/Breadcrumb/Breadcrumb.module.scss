@@ -1,0 +1,22 @@
+.breadcrumb, .lastBreadcrumb{
+  font-size: 18px;
+}
+
+.breadcrumb{
+  cursor: pointer;
+  border-bottom: whitesmoke 1px solid;
+  padding: 2px;
+}
+
+.breadcrumb_wrap{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.breadcrumb:after{
+  content: '>';
+  margin-left: 10px;
+}

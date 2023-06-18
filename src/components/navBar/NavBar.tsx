@@ -1,23 +1,46 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import styles from "./NavBar.module.scss";
+import { useBreadcrumbContext } from "../../hooks/useBreadcrumbContext";
+
+interface BreadcrumbContextType {
+  addBreadcrumb: (to: string) => void;
+}
 
 const NavBar = () => {
-  let data = localStorage.getItem("singleCharacter");
-  // @ts-ignore
-  const { id } = JSON.parse(data);
+  const { addBreadcrumb } = useBreadcrumbContext() as BreadcrumbContextType;
+  const currentPath = useLocation();
 
-  const [personId, setPersonId] = useState(id);
-
-  useEffect(() => {
-    setPersonId(id);
-  }, [data]);
-  console.log("NAVBAR", personId);
+  const handleNavigate = (to: string) => {
+    addBreadcrumb(to);
+  };
   return (
-    <div>
-      <Link to={"/home"}>Home</Link>
-      <Link to={"/characters"}>Characters</Link>
-      <Link to={`/additionalInfo:${personId}`}>Additional</Link>
-    </div>
+    <header className={styles.navbar_header}>
+      <div className={styles.navbar_wrap}>
+        <Link
+          onClick={() => handleNavigate("/home")}
+          className={
+            currentPath.pathname === "/home"
+              ? styles.links_active
+              : styles.links
+          }
+          to={"/home"}
+        >
+          Home
+        </Link>
+        <Link
+          onClick={() => handleNavigate("/characters")}
+          className={
+            currentPath.pathname === "/characters"
+              ? styles.links_active
+              : styles.links
+          }
+          to={"/characters"}
+        >
+          Characters
+        </Link>
+      </div>
+    </header>
   );
 };
 

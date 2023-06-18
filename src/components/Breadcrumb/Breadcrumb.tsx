@@ -1,23 +1,39 @@
 import React from "react";
+import { useBreadcrumbContext } from "../../hooks/useBreadcrumbContext";
+import styles from "./Breadcrumb.module.scss";
 
-interface BreadcrumbProps {
-  path: string[]; // Replace with the path data type
-  onNavigate: (index: number) => void;
+interface BreadcrumbContextType {
+  breadcrumbs: string[];
+  goToSelectedBreadcrumb: (breadcrumb: string) => void;
 }
 
-const Breadcrumb: React.FC<BreadcrumbProps> = ({ path, onNavigate }) => {
+export default function Breadcrumb() {
+  const { breadcrumbs, goToSelectedBreadcrumb } =
+    useBreadcrumbContext() as BreadcrumbContextType;
+  const breadcrumbPattern = /\w/g;
   return (
-    <div data-testid="breadcrumb">
-      {path.map((level, index) => (
-        <span key={index}>
-          {index > 0 && " / "}
-          <span style={{ cursor: "pointer" }} onClick={() => onNavigate(index)}>
-            {level}
-          </span>
-        </span>
-      ))}
+    <div className={styles.breadcrumb_wrap}>
+      {breadcrumbs.map((breadcrumb, i) => {
+        if (breadcrumb.includes("characters") && breadcrumb.length > 12) {
+          return (
+            <div className={styles.lastBreadcrumb} key={i.toString()}>
+              {breadcrumb.match(breadcrumbPattern)}
+            </div>
+          );
+        } else if (breadcrumb.length < 2) {
+          return null;
+        } else {
+          return (
+            <div
+              className={styles.breadcrumb}
+              key={i.toString()}
+              onClick={() => goToSelectedBreadcrumb(breadcrumb)}
+            >
+              {breadcrumb.match(breadcrumbPattern)}
+            </div>
+          );
+        }
+      })}
     </div>
   );
-};
-
-export default Breadcrumb;
+}

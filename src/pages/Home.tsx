@@ -1,19 +1,12 @@
 import React from "react";
-import styles from "../components/Table/Table.module.scss";
-import { useNavigate } from "react-router-dom";
+import HomeButton from "../components/buttons/HomeButton";
 
 const Home = () => {
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate("/characters");
-  };
   return (
-    <div className={styles.button_wrap}>
-      <button className={styles.button} onClick={handleClick}>
-        Go to the table
-      </button>
-    </div>
+    <>
+      <HomeButton text="Go to the table" path="/characters" />
+      <HomeButton text="Go to the preview" path="/" />
+    </>
   );
 };
 
