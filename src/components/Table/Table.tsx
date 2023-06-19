@@ -1,24 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import TableRow from "./TableRow";
 import styles from "./Table.module.scss";
 import { useGetAllCharactersQuery } from "../../api/api";
 import { ICharacter } from "../../api/interfaces";
 import { Nullable } from "../../types";
 
-interface TableProps {
-  selectedRow: Nullable<ICharacter>;
-  onRowSelect: (row: Nullable<any>) => void;
-}
-
-const Table: React.FC<TableProps> = ({ selectedRow, onRowSelect }) => {
+const Table = () => {
   const { data: characters } = useGetAllCharactersQuery();
+  const [selectedRow, setSelectedRow] = useState<Nullable<ICharacter>>(null);
 
   const handleRowClick = (row: ICharacter) => {
-    onRowSelect(row);
+    setSelectedRow(row);
   };
 
   return (
-    <table data-testid={"table-component"} className={styles.table}>
+    <table data-testid="table-component" className={styles.table}>
       <thead className={styles.thead}>
         <tr>
           <th>Name</th>

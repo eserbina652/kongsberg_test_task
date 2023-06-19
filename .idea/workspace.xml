@@ -4,29 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bddca990-29af-46eb-b1ec-edd9b1dec637" name="Changes" comment="design was resolved">
-      <change afterPath="$PROJECT_DIR$/src/components/Breadcrumb/Breadcrumb.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Table/CharacterAllInfo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Welcome.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Welcome.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navBar/NavBar.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useBreadcrumbContext.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/DefaultPage.tsx" afterDir="false" />
+    <list default="true" id="bddca990-29af-46eb-b1ec-edd9b1dec637" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/@types/msw.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Table/Additional.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Table/CharacterAllInfo.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Table/TableRow.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Welcome.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/navBar/Navbar.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/routes/AppRouter.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useBreadcrumbContext.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/DefaultPage.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Breadcrumb/Breadcrumb.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Breadcrumb/Breadcrumb.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Table/Additional.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/Additional.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Table/Table.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/Table.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Table/Table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/Table.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Table/TableRow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/TableRow.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttons/HomeButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttons/HomeButton.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/navBar/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navBar/NavBar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/routes/AppRouter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/routes/AppRouter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/routes/routers.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/detectedClick.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AllCharacters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AllCharacters.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/DefaultPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DefaultPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SingleCharacter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SingleCharacter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +38,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
         <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -82,29 +83,81 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components/Table" />
       <recent name="$PROJECT_DIR$/src/pages" />
-      <recent name="$PROJECT_DIR$/src/assets/fonts/Kablammo" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="App" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.SingleCharacter">
+    <configuration name="Home" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/App.test.tsx" />
+      <test-file value="$PROJECT_DIR$/src/pages/Home.test.tsx" />
       <test-names>
-        <test-name value="App" />
+        <test-name value="Home" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="SingleCharacter" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/pages/SingleCharacter.test.tsx" />
+      <test-names>
+        <test-name value="SingleCharacter" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="renders the Welcome component (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/Welcome.test.tsx" />
+      <test-names>
+        <test-name value="renders the Welcome component" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="renders the Welcome component" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/pages/DefaultPage.test.tsx" />
+      <test-names>
+        <test-name value="renders the Welcome component" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="renders two home buttons with correct text and path" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/pages/Home.test.tsx" />
+      <test-names>
+        <test-name value="renders two home buttons with correct text and path" />
       </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.App" />
+        <item itemvalue="Jest.renders the Welcome component (1)" />
+        <item itemvalue="Jest.renders the Welcome component" />
+        <item itemvalue="Jest.renders two home buttons with correct text and path" />
+        <item itemvalue="Jest.Home" />
+        <item itemvalue="Jest.SingleCharacter" />
       </list>
     </recent_temporary>
   </component>
@@ -126,7 +179,8 @@
       <workItem from="1686812348529" duration="13219000" />
       <workItem from="1686920963206" duration="22782000" />
       <workItem from="1687072435163" duration="5669000" />
-      <workItem from="1687078212718" duration="13673000" />
+      <workItem from="1687078212718" duration="23454000" />
+      <workItem from="1687156843599" duration="11060000" />
     </task>
     <task id="LOCAL-00001" summary="Get api response and added all data to the table/added styles and animations/plugged the font">
       <created>1686827598841</created>
@@ -142,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687016211175</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Breadcrumb navigation was resolved/added some necessary styles">
+      <created>1687103897670</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687103897670</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +213,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Get api response and added all data to the table/added styles and animations/plugged the font" />
     <MESSAGE value="design was resolved" />
-    <option name="LAST_COMMIT_MESSAGE" value="design was resolved" />
+    <MESSAGE value="Breadcrumb navigation was resolved/added some necessary styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Breadcrumb navigation was resolved/added some necessary styles" />
   </component>
 </project>

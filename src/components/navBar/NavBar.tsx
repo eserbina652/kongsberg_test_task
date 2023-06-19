@@ -15,9 +15,10 @@ const NavBar = () => {
     addBreadcrumb(to);
   };
   return (
-    <header className={styles.navbar_header}>
+    <header data-testid={"navbar"} className={styles.navbar_header}>
       <div className={styles.navbar_wrap}>
         <Link
+          data-testid={"home-link"}
           onClick={() => handleNavigate("/home")}
           className={
             currentPath.pathname === "/home"
@@ -29,6 +30,7 @@ const NavBar = () => {
           Home
         </Link>
         <Link
+          data-testid="characters-link"
           onClick={() => handleNavigate("/characters")}
           className={
             currentPath.pathname === "/characters"

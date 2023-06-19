@@ -6,7 +6,6 @@ import AppRouter from "./components/routes/AppRouter";
 import { BreadcrumbProvider } from "./hooks/useBreadcrumbContext";
 function App() {
   return (
-    // @ts-ignore
     <BreadcrumbProvider>
       <div className={styles.appFont}>
         <NavBar />

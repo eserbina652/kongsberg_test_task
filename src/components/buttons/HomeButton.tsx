@@ -15,7 +15,11 @@ const HomeButton = ({ text, path }: HomeButtonProps) => {
   };
   return (
     <div className={styles.button_wrap}>
-      <button className={styles.button} onClick={handleClick}>
+      <button
+        data-testId={"home_button"}
+        className={styles.button}
+        onClick={handleClick}
+      >
         {text}
       </button>
     </div>

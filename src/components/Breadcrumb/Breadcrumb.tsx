@@ -12,11 +12,15 @@ export default function Breadcrumb() {
     useBreadcrumbContext() as BreadcrumbContextType;
   const breadcrumbPattern = /\w/g;
   return (
-    <div className={styles.breadcrumb_wrap}>
+    <div data-testid={"breadcrumb-wrap"} className={styles.breadcrumb_wrap}>
       {breadcrumbs.map((breadcrumb, i) => {
         if (breadcrumb.includes("characters") && breadcrumb.length > 12) {
           return (
-            <div className={styles.lastBreadcrumb} key={i.toString()}>
+            <div
+              data-testid={"unClickableBreadcrumb"}
+              className={styles.lastBreadcrumb}
+              key={i.toString()}
+            >
               {breadcrumb.match(breadcrumbPattern)}
             </div>
           );
